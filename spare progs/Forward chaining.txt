@@ -1,0 +1,38 @@
+def forward_chaining(knowledge_base, goals):
+    inferred = {}
+    agenda = goals[:]
+    
+    while agenda:
+        fact = agenda.pop(0)
+        if fact in inferred:
+            continue
+        inferred[fact] = True
+        for rule in knowledge_base:
+            if fact in rule[1]:
+                rule[1].remove(fact)
+                if not rule[1]:
+                    agenda.append(rule[0])
+    
+    return inferred
+
+
+knowledge_base = [
+    (('A',), ['B']),
+    (('B',), ['C']),
+    (('C',), []),
+    (('D',), ['E']),
+    (('E',), ['F']),
+    (('F',), []),
+    (('G',), ['H']),
+    (('H',), ['I']),
+    (('I',), []),
+]
+
+
+goals = ['A', 'D', 'G']
+
+inferred = forward_chaining(knowledge_base, goals)
+
+print("Inferred facts:")
+for goal, value in inferred.items():
+    print(f"{goal}: {value}")
