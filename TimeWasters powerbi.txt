@@ -1,0 +1,36 @@
+🔵 Demographics & User Info
+
+Chart Type	Measure vs Dimension
+Pie / Donut	Gender vs Count of UserID
+Pie / Donut	Location vs Count of UserID
+Bar	Profession vs Count of UserID
+Stacked Bar	Demographics vs Platform
+Treemap	Profession by Platform usage
+🔶 Platform Usage Behavior
+
+Chart Type	Measure vs Dimension
+Bar / Column	Platform vs Total Time Spent
+Pie / Donut	Platform vs Count of users
+Funnel	Platform > Number of Sessions > Engagement
+Line / Area	Platform vs Number of Videos Watched
+🟢 Time & Watch Behavior
+
+Chart Type	Measure vs Dimension
+Line / Area	Watch Time vs Total Time Spent
+Scatter Plot	Addiction Level vs Self Control
+Histogram	Distribution of Scroll Rate
+Bar	Watch Reason vs Time Spent On Video
+🔴 Productivity & Satisfaction
+
+Chart Type	Measure vs Dimension
+Bar / Column	Platform vs ProductivityLoss
+Line Chart	Addiction Level vs Satisfaction
+Heatmap	Profession vs ProductivityLoss
+Scatter Plot	Self Control vs Addiction Level (color by Platform)
+🟡 Device & Connection Insights
+
+Chart Type	Measure vs Dimension
+Pie / Donut	DeviceType vs Count of users
+Stacked Bar	OS vs Platform
+Bar	ConnectionType vs Total Time Spent
+Treemap	DeviceType vs Watch Reason
