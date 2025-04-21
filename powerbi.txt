@@ -1,7 +1,0 @@
-Region-sales donut
-sunb-category sales funnel
-state sales map
-segment sales pie
-order date sales linechart
-sales,profit,discount,quantity card
- 
